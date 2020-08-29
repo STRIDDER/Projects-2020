@@ -1,0 +1,410 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: bbdefb;
+}
+.container {
+	display: flex;
+}
+.container_2 {
+	position: relative;
+	/* margin-top: 3vh; */
+	margin-top: 30px;
+	/* margin-left: 28vh; */
+	margin-left: 178px;
+
+	/* margin-left: 11.25em; */
+	width: 1080px;
+	/* width:675%; */
+	/* width: 166.9242658423493vh; */
+	/* width: 164vh; */
+	height: 580px;
+	/* width: 79vw; */
+	/* height: 88vh; */
+	/* height: 43vw; */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	/* box-shadow: 0.22vw 0.22vw 0.073vw 0.15vw grey; */
+	/* border-radius: 1.5vh; */
+	/* border-radius: 0.69vh; */
+	border-radius: 10px;
+	background-color: white;
+}
+.container .info_container {
+	margin-top: 30px;
+	/* margin-top: 4.6vh; */
+	/* margin-top: 2.1vw; */
+	/* margin-left: 4.6vh; */
+	margin-left: 30px;
+	/* margin-left: 2.1vw; */
+	width: 750px;
+	/* width: 55.5%; */
+	/* width: 114.15525114155251vh; */
+	/* width: 114vh; */
+	/* width: 55vw; */
+	height: 600px;
+	/* height: 91vh; */
+	/* height: 43.8vw; */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	background-color: white;
+	/* border-radius: 1.5vh; */
+	border-radius: 10px;
+}
+.container .info_container .info_flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.address_container {
+	margin-top: 30px;
+	/* margin-top: 4.6vh; */
+	margin-left: 180px;
+	/* margin-left: 27vh; */
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	/* width: 45.67vh; */
+	height: 600px;
+	/* height: 91vh; */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 10px;
+	/* border-radius: 1.5vh; */
+}
+.address_container .sub_container_1 {
+	width: 200px;
+	height: 200px;
+	/* width: 30.4vh;
+	height: 30.4vh; */
+}
+.address_container .sub_container_2 h1 {
+	margin-top: 40px;
+	/* margin-top: 6vh; */
+	text-align: center;
+}
+.address_container .sub_container_2 h4 {
+	margin-top: 20px;
+	margin-left: 50px;
+	/* margin-top: 3vh;
+	margin-left: 7.6vh; */
+	padding-left: 0vh;
+	padding-right: 0vh;
+	text-align: center;
+	/* border: 1px solid blue; */
+	width: 190px;
+	/* width: 29vh; */
+	border-radius: 10px 100px / 120px;
+	/* border-radius: 1.5vh 15vh / 18vh; */
+	background-color: whitesmoke;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.address_container .sub_container_1 img {
+	width: 80%;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-right: auto;
+	/* width: 100%; */
+	/* height: auto; */
+	border-radius: 50%;
+}
+.address_container .sub_container_2 .icon {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 90px;
+}
+.address_container .sub_container_2 .info h3 {
+	background-color: #eaf7fb;
+	width: 100%;
+	text-align: center;
+}
+.address_container .sub_container_2 .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.address_container .sub_container_2 .info a {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.address_container .sub_container_2 .info .button {
+	background-color: #1976d2;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+.address_container .sub_container_2 .info .button:hover,
+.address_container .sub_container_2 .info .button:active {
+	background-color: blue;
+}
+.container .info_container .info_flex h1 {
+	margin-top: 10px;
+	margin-left: 20px;
+	font-weight: 18.75em;
+	display: inline-block;
+	padding-bottom: 5px;
+	position: relative;
+}
+.container .info_container .info_flex h1:before {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 1px;
+	bottom: 0;
+	left: 5%;
+	border-bottom: 1px solid black;
+}
+.container .info_container .info_flex #para_info {
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+	margin-top: 20px;
+	height: 100px;
+	background-color: #e3f2fd;
+	overflow: hidden;
+}
+/* .container .info_container .info_flex #tag {
+} */
+#card {
+	display: flex;
+	margin: 10px;
+	padding: 20px;
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	/* box-shadow: 2px 1px 1px black; */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 20px;
+}
+.container .info_container .info_flex table {
+	margin-left: 60px;
+	margin-top: 20px;
+}
+.container .info_container .info_flex table tr td {
+	/* margin: 30px; */
+	margin-bottom: 10px;
+}
+.container .info_container .info_flex table tr td #card img {
+	width: 24px;
+	height: 24px;
+	margin-top: 10px;
+}
+.container .info_container .info_flex table tr td #card .card_info {
+	padding-top: 10px;
+	padding-left: 30px;
+	display: flex;
+
+	flex-direction: column;
+}
+.container .info_container .info_flex table tr td #card .card_info h4 {
+	padding-bottom: 20px;
+}
+
+/* The Timeline Stylesheet ---------------------------------------------------------------------------------*/
+
+.container_2 table tr td .container_2_img img {
+	width: 500px;
+	height: 400px;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-left: 0px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: black;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.container3 {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+/* The circles on the timeline */
+.container3::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	/* border: 4px solid #ff9f55; */
+	border: 4px solid #0288d1;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+	left: 0;
+}
+
+/* Place the container to the right */
+.right {
+	left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+	left: -16px;
+}
+
+/* The actual content */
+.content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+	/* Place the timelime to the left */
+	.timeline::after {
+		left: 31px;
+	}
+
+	/* Full-width containers */
+	.container3 {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.container3::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* Make sure all circles are at the same spot */
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
+}
+
+/* The timeline Stylesheet end ----------------------------------------------------------------------------------*/
+
+/* <!-- The Style Sheet for Third Block --> ---------------------------------------------------------------------- */
+.container_4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 180px;
+	width: 1080px;
+	height: 750px;
+	/* border: 1px dotted black; */
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.container_4 .title_b3 {
+	margin-top: 30px;
+}
+.container_4 table tr {
+	margin: 20px;
+}
+.container_4 table tr td {
+	margin: 20px;
+}
+.container_4 table tr td h4 {
+	padding: 5px;
+	padding-bottom: 5px;
+}
+.container_4 table tr td p {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+.container_4 table tr td .card_b3 {
+	margin-top: 30px;
+	margin: 30px;
+	width: 250px;
+	height: 300px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.container_4 table tr td .card_b3 .img_top {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/* <!-- The Style Sheet for Third Block --> -----------------------------------------------------------------------*/
+
+/* <!-- The stylesheet for box4 -->--------------------------------------------------------------------------------- */
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 180px;
+	width: 1080px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* <!-- The stylesheet for box4 end --> -----------------------------------------------------------------------------*/
