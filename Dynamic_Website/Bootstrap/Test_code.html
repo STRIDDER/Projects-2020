@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Bootstrap CSS CDN -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+    ></script> -->
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="StyleSheet"
+			href="stylesheet.css"
+			type="text/css"
+			media="screen"
+		/>
+		<!-- <link rel="StyleSheet" href="font.css" type="text/css" media="screen" /> -->
+		<!-- <link rel="stylesheet" href="fontawesome.min.css" /> -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.css
+
+
+
+
+		"
+		/> -->
+	</head>
+	<body
+		class="pace-done"
+		data-aos-easing="ease"
+		data-aos-duration="400"
+		data-aos-delay="0"
+	>
+		<div class="pace pace-inactive">
+			<div
+				class="pace-progress"
+				data-progress-text="100%"
+				data-progress="99"
+				style="transform: translate3d(100%, 0px, 0px)"
+			>
+				<div class="pace-progress-inner"></div>
+			</div>
+			<div class="pace-activity"></div>
+		</div>
+		<div class="container-fluid">
+			<!-- <nav
+				class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light"
+				style="top: 0px"
+			> -->
+			<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+				<!-- <div class="container"> -->
+				<a href="#" class="navbar-brand">
+					<img src="logo-black.svg" alt="" loading="lazy" />
+				</a>
+
+				<button
+					class="navbar-toggler"
+					data-toggle="collapse"
+					data-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a href="#" class="nav-link"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<!-- The First DropDOwn Button -->
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								DEMOS
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="#">Basic</a>
+								<a class="dropdown-item" href="#">Startup-1</a>
+								<a class="dropdown-item" href="#">Startup-2</a>
+								<a class="dropdown-item" href="#">Startup-3</a>
+								<a class="dropdown-item" href="#">Saas-1</a>
+								<a class="dropdown-item" href="#">Saas-2</a>
+								<a class="dropdown-item" href="#">Mobile</a>
+								<a class="dropdown-item" href="#">Meetup</a>
+							</div>
+						</li>
+						<!-- The first Dropdown end -->
+						<!-- The second Drop Down Begin -->
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Pages
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="#">About</a>
+								<a class="dropdown-item" href="#">Pricing-1</a>
+								<a class="dropdown-item" href="#">Pricing-2</a>
+								<a class="dropdown-item" href="#">Contact us</a>
+								<a class="dropdown-item" href="#">FAQ</a>
+								<a class="dropdown-item" href="#">Login & Register 1</a>
+								<a class="dropdown-item" href="#">Login & Register 2</a>
+								<a class="dropdown-item" href="#">Password Recovery</a>
+								<a class="dropdown-item" href="#">404 Error</a>
+								<a class="dropdown-item" href="#">Privacy & terms</a>
+								<a class="dropdown-item" href="#">Careers</a>
+								<a class="dropdown-item" href="#">Careers Page</a>
+								<a class="dropdown-item" href="#">Apply Form</a>
+							</div>
+						</li>
+						<!-- Second Drop Down End -->
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Blog
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="#">Blog 1</a>
+								<a class="dropdown-item" href="#">Blog Article 1</a>
+								<a class="dropdown-item" href="#">Blog 2</a>
+								<a class="dropdown-item" href="#">Blog Article 2</a>
+							</div>
+						</li>
+						<!-- Second Drop Down List ENd -->
+
+						<!-- The Third DropDown List -->
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								DOCS
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="#">Getting Started</a>
+								<a class="dropdown-item" href="#">Changelog</a>
+								<a class="dropdown-item" href="#">Support</a>
+								<a class="dropdown-item" href="#">Icons</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<button type="button" class="btn btn-dark">Buy</button>
+						</li>
+						<li class="nav-item">
+							<button type="button" class="btn btn-light">
+								<i>
+									<!-- ::before -->
+									<img src="account-outline.png" alt="" />
+								</i>
+								Light
+							</button>
+						</li>
+					</ul>
+				</div>
+				<!-- </div> -->
+			</nav>
+			<!-- The navigation Bar ended here -->
+			<!-- </div> -->
+
+			<!-- The second Section begins from here -->
+
+			<div class="conatiner-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="col_container">
+							<div class="col_1">
+								<!-- The first copied Point 1 -->
+								<div class="container">
+									<div class="row boxx">
+										<div class="row">
+											<div class="broad">
+												<img src="clock-time-four.png" alt="" />
+											</div>
+											<h4 class="h4-size">Version 2.0.0</h4>
+										</div>
+									</div>
+									<!-- The Second Copied point 2 below -->
+									<div class="row">
+										<div class="col">
+											<div class="typing-coursel-container">
+												<h1>
+													<p>
+														Do it
+														<span class="typed-text"></span
+														><span class="cursor">&nbsp;</span>
+														with Replacer
+														<!-- <p>with Replacer</p> -->
+													</p>
+												</h1>
+											</div>
+											<h5 class="text-below-typing-coursel">
+												Replacer is a perfect tool to start making
+												landing pages with Bootstrap 4, it provides
+												content-oriented, clean, modular and
+												mobile-first design, which you can easily
+												customize
+											</h5>
+											<div class="row">
+												<div class="col">
+													<div class="pos_button">
+														<div class="btnn nn">
+															<button
+																type="button"
+																class="btn rounded-pill btn-secondary px-4 mr-3"
+															>
+																Purchase
+															</button>
+														</div>
+														<div class="btnn">
+															<button
+																type="button"
+																class="btn rounded-pill btn-white px-4 mr-3"
+															>
+																Documentation
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col">
+													<div class="icon">
+														<span class="text-warning small"
+															><i
+																><svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	x="0px"
+																	y="0px"
+																	width="24"
+																	height="24"
+																	viewBox="0 0 172 172"
+																	style="fill: #000000"
+																>
+																	<g
+																		fill="none"
+																		fill-rule="nonzero"
+																		stroke="none"
+																		stroke-width="1"
+																		stroke-linecap="butt"
+																		stroke-linejoin="miter"
+																		stroke-miterlimit="10"
+																		stroke-dasharray=""
+																		stroke-dashoffset="0"
+																		font-family="none"
+																		font-weight="none"
+																		font-size="none"
+																		text-anchor="none"
+																		style="
+																			mix-blend-mode: normal;
+																		"
+																	>
+																		<path
+																			d="M0,172v-172h172v172z"
+																			fill="none"
+																		></path>
+																		<g fill="#ffd044">
+																			<path
+																				d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																			></path>
+																		</g>
+																	</g></svg
+															></i>
+															<i
+																><svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	x="0px"
+																	y="0px"
+																	width="24"
+																	height="24"
+																	viewBox="0 0 172 172"
+																	style="fill: #000000"
+																>
+																	<g
+																		fill="none"
+																		fill-rule="nonzero"
+																		stroke="none"
+																		stroke-width="1"
+																		stroke-linecap="butt"
+																		stroke-linejoin="miter"
+																		stroke-miterlimit="10"
+																		stroke-dasharray=""
+																		stroke-dashoffset="0"
+																		font-family="none"
+																		font-weight="none"
+																		font-size="none"
+																		text-anchor="none"
+																		style="
+																			mix-blend-mode: normal;
+																		"
+																	>
+																		<path
+																			d="M0,172v-172h172v172z"
+																			fill="none"
+																		></path>
+																		<g fill="#ffd044">
+																			<path
+																				d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																			></path>
+																		</g>
+																	</g></svg
+															></i>
+															<i
+																><svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	x="0px"
+																	y="0px"
+																	width="24"
+																	height="24"
+																	viewBox="0 0 172 172"
+																	style="fill: #000000"
+																>
+																	<g
+																		fill="none"
+																		fill-rule="nonzero"
+																		stroke="none"
+																		stroke-width="1"
+																		stroke-linecap="butt"
+																		stroke-linejoin="miter"
+																		stroke-miterlimit="10"
+																		stroke-dasharray=""
+																		stroke-dashoffset="0"
+																		font-family="none"
+																		font-weight="none"
+																		font-size="none"
+																		text-anchor="none"
+																		style="
+																			mix-blend-mode: normal;
+																		"
+																	>
+																		<path
+																			d="M0,172v-172h172v172z"
+																			fill="none"
+																		></path>
+																		<g fill="#ffd044">
+																			<path
+																				d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																			></path>
+																		</g>
+																	</g></svg
+															></i>
+															<i
+																><svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	x="0px"
+																	y="0px"
+																	width="24"
+																	height="24"
+																	viewBox="0 0 172 172"
+																	style="fill: #000000"
+																>
+																	<g
+																		fill="none"
+																		fill-rule="nonzero"
+																		stroke="none"
+																		stroke-width="1"
+																		stroke-linecap="butt"
+																		stroke-linejoin="miter"
+																		stroke-miterlimit="10"
+																		stroke-dasharray=""
+																		stroke-dashoffset="0"
+																		font-family="none"
+																		font-weight="none"
+																		font-size="none"
+																		text-anchor="none"
+																		style="
+																			mix-blend-mode: normal;
+																		"
+																	>
+																		<path
+																			d="M0,172v-172h172v172z"
+																			fill="none"
+																		></path>
+																		<g fill="#ffd044">
+																			<path
+																				d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																			></path>
+																		</g>
+																	</g></svg
+															></i>
+															<i
+																><svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	x="0px"
+																	y="0px"
+																	width="24"
+																	height="24"
+																	viewBox="0 0 172 172"
+																	style="fill: #000000"
+																>
+																	<g
+																		fill="none"
+																		fill-rule="nonzero"
+																		stroke="none"
+																		stroke-width="1"
+																		stroke-linecap="butt"
+																		stroke-linejoin="miter"
+																		stroke-miterlimit="10"
+																		stroke-dasharray=""
+																		stroke-dashoffset="0"
+																		font-family="none"
+																		font-weight="none"
+																		font-size="none"
+																		text-anchor="none"
+																		style="
+																			mix-blend-mode: normal;
+																		"
+																	>
+																		<path
+																			d="M0,172v-172h172v172z"
+																			fill="none"
+																		></path>
+																		<g fill="#ffd044">
+																			<path
+																				d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																			></path>
+																		</g>
+																	</g></svg
+															></i>
+														</span>
+														<h6 class="h-review">
+															5.0 points, based on 3 reviews
+														</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col_2">
+								<!-- The third pasted Content -->
+
+								<img
+									class="img-fluid"
+									src="promo _test_crop.jpg"
+									alt="Responsive image"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex_section">
+					<section class="small_sec">
+						<div class="row" id="container_1">
+							<div class="container">
+								<div class="my-auto py-2 marg text-center-1">
+									<div class="pos">
+										<img src="lightning-bolt-16.png" alt="" />
+										Replacer 2 is here! Tons of updates delivered,
+										<a href="#">look at the changelog</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="small_sec_2">
+						<div class="row" id="container_1">
+							<div class="container">
+								<div class="row" id="text-center">
+									<div class="col small-sec-h6">
+										<h6>CHOOSE YOUR DEMO</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!-- Issues -->
+				<section style="background: #ffffff">
+					<div class="container-fluid" style="background: #ffffff">
+						<div class="container" style="background: #ffffff">
+							<div class="section-2">
+								<div class="col">
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo1.jpg"
+												alt=""
+											/>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo2.jpg"
+												alt=""
+											/>
+										</div>
+									</div>
+									<!-- The test LIne of Second Row -->
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo3.jpg"
+												alt=""
+											/>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo4.jpg"
+												alt=""
+											/>
+										</div>
+									</div>
+									<!-- The test line for third Row -->
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo5.jpg"
+												alt=""
+											/>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo6.jpg"
+												alt=""
+											/>
+										</div>
+									</div>
+									<!-- Thwe forth Test Line for fourth row -->
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo7.jpg"
+												alt=""
+											/>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-12 p-3">
+											<img
+												class="w-100 hvr-float rounded border"
+												src="box_card_images\demo8.jpg"
+												alt=""
+											/>
+										</div>
+									</div>
+									<!-- The Test line for fifth Row -->
+									<div class="row" style="background: #ffffff">
+										<div class="col-lg-4 col-md-12 mb-6">
+											<div
+												class="card flex-body"
+												style="
+													display: flex;
+													justify-content: space-around;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													height: 50vh;
+													padding: 10px;
+													padding-top: 3vh;
+												"
+											>
+												<div class="icon">
+													<span class="text-warning small"
+														><i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+													</span>
+												</div>
+												<h6
+													class="h-review"
+													style="
+														margin-top: 3vh;
+														margin-bottom: 3vh;
+													"
+												>
+													RON
+												</h6>
+												<h6>
+													<p
+														class="arrange-para"
+														style="text-align: center"
+													>
+														Needed to put up a site pretty quickly
+														and was able to hit the ground running
+														with Replacer. We had a couple of
+														bone-headed questions as we were
+														customizing and these were answered
+														quickly and professionally. Well worth
+														the money. No doubt!
+													</p>
+												</h6>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-12 mb-6">
+											<div
+												class="card flex-body"
+												style="
+													display: flex;
+													justify-content: space-around;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													height: 50vh;
+													padding: 10px;
+													padding-top: 4vh;
+												"
+											>
+												<div class="icon">
+													<span class="text-warning small"
+														><i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+													</span>
+												</div>
+												<h6
+													class="h-review"
+													style="
+														margin-top: 3vh;
+														margin-bottom: 3vh;
+														font-size: 1rem;
+													"
+												>
+													LUIS
+												</h6>
+												<h6>
+													<p
+														class="arrange-para"
+														style="text-align: center"
+													>
+														Actually the simplicity of this theme
+														makes it almost some sort of
+														meta-theme, (a theme for other themes)
+														since basically the theme does not
+														have any added js or SCSS, (just plain
+														bootstrap 4) that makes it perfect for
+														integrating its beautiful components
+														to other bootstrap 4 themes...
+													</p>
+												</h6>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-12 mb-6">
+											<div
+												class="card flex-body"
+												style="
+													display: flex;
+													justify-content: space-around;
+													flex-direction: column;
+													justify-content: center;
+													align-items: center;
+													height: 50vh;
+													padding: 10px;
+													padding-top: 0vh;
+												"
+											>
+												<div class="icon">
+													<span class="text-warning small"
+														><i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+														<i
+															><svg
+																xmlns="http://www.w3.org/2000/svg"
+																x="0px"
+																y="0px"
+																width="24"
+																height="24"
+																viewBox="0 0 172 172"
+																style="fill: #000000"
+															>
+																<g
+																	fill="none"
+																	fill-rule="nonzero"
+																	stroke="none"
+																	stroke-width="1"
+																	stroke-linecap="butt"
+																	stroke-linejoin="miter"
+																	stroke-miterlimit="10"
+																	stroke-dasharray=""
+																	stroke-dashoffset="0"
+																	font-family="none"
+																	font-weight="none"
+																	font-size="none"
+																	text-anchor="none"
+																	style="
+																		mix-blend-mode: normal;
+																	"
+																>
+																	<path
+																		d="M0,172v-172h172v172z"
+																		fill="none"
+																	></path>
+																	<g fill="#ffd044">
+																		<path
+																			d="M86,128.1185l48.9555,29.54817l-12.99317,-55.685l43.25083,-37.46733l-56.9535,-4.83033l-22.25967,-52.51733l-22.25967,52.51733l-56.9535,4.83033l43.25083,37.46733l-12.99317,55.685z"
+																		></path>
+																	</g>
+																</g></svg
+														></i>
+													</span>
+												</div>
+												<h6
+													class="h-review"
+													style="
+														margin-top: 3vh;
+														margin-bottom: 3vh;
+													"
+												>
+													ASHISH
+												</h6>
+												<h6>
+													<p
+														class="arrange-para"
+														style="text-align: center"
+													>
+														I was looking for a simple, but
+														professional landing page theme for my
+														restaurant food ordering service. It
+														perfectly met my needs. Looks like it
+														was built with bootstrap 4.0 beta.
+														Hope, they will soon update it with
+														the latest 4.x version.
+													</p>
+												</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- The Test First line -->
+					</div>
+					<!-- The Container DIv is this -->
+				</section>
+			</div>
+			<!-- The Third Section STart -->
+
+			<!-- The third Section end -->
+			<!-- The Container Fluid Div Below -->
+		</div>
+		<!-- The javascript File for Typing Coursel -->
+		<script src="main.js"></script>
+	</body>
+</html>
