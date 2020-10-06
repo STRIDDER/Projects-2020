@@ -41,11 +41,11 @@ ${Object.keys(data_obj)
 async function slide_show(data_link) {
 	try {
 		const response = await fetch(
-			`https://dog.ceo/api/breed/${data_link}/images/random`
+			`https://dog.ceo/api/breed/${data_link}/images`
 		);
 		const resp_obj = await response.json();
-		//console.log(response);
-		// console.log(resp_obj.message);
+		//console.log(resp_obj.message.length);
+		//console.log(resp_obj.message);
 		// slide_show(resp_obj.message);
 		display(resp_obj.message);
 	} catch (e) {
@@ -53,9 +53,34 @@ async function slide_show(data_link) {
 	}
 }
 function display(value) {
-	document.getElementById("dog-image-container").innerHTML = `
-	 <img src="${value}">
-	`;
+	// value.map((x, i) => {
+	let myvar = setInterval(toggle, 100);
+	// setInterval(function () {
+	function toggle() {
+		value.map((x, i) => {
+			// for (var i = 0; i < value.length; i++) {
+			console.log("");
+			console.log("The value of of index is " + i);
+			//console.log("The value link is " + x);
+			// document.getElementById("dog-image-container").innerHTML = `
+			// <img src=${x}>`;
+
+			setInterval(function () {
+				document.getElementById("dog-image-container").innerHTML = `
+			<img src=${x}>`;
+				stoptoggle();
+			}, 500);
+			// stoptoggle();
+		});
+		//stoptoggle();
+		// toggle();
+	}
+	// }, 1500);
+	function stoptoggle() {
+		clearInterval(myvar, 5000);
+	}
+	// });
+
 	// <img src="https://dog.ceo/api/breed/${value}/images">
 }
 // $("#option-list").change(function () {
@@ -76,18 +101,6 @@ $(document).on("change", "#option-list", function () {
 	// alert(`${text}`);
 	//console.log("The jquery value " + text);
 	slide_show(text);
-	// for (const x in data_slide) {
-	// 	// console.log(`The Object Vale from Jquery: ${x}`);
-	// 	//console.log(`The Value from Jquery proto:` + `${x}`.__proto__);
-	// 	/*	if (`${x}` == text) {
-	// 		console.log(`condition Worked`);
-	// 		for (var i = 0; i < `${data_slide[x]}.length`; i++) {
-	// 			console.log(`${data_slide[x]}`);
-	// 		}
-	// 	} //else console.log(`${x}`);
-	// 	*/
-	// }
-	//console.log("The Length is " + data_slide[text].length);
 });
 
 // $(() => {
