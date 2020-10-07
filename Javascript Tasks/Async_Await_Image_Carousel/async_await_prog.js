@@ -27,115 +27,46 @@ ${Object.keys(data_obj)
 </select>
 `;
 }
-// async function slide() {
-// 	try {
-// 		const response = await fetch("https://dog.ceo/api/breeds/image/random");
-// 		const resp_obj = await response.json();
-// 		console.log(resp_obj.message);
-// 		// slide_show(resp_obj.message);
-// 	} catch (e) {
-// 		console.log("You encountered a Bug at slide");
-// 	}
-// }
 
+let i = 0; //The Initial Value
+let time = 3000; //Time Between Millisecond
+let data = [];
 async function slide_show(data_link) {
 	try {
 		const response = await fetch(
 			`https://dog.ceo/api/breed/${data_link}/images`
 		);
 		const resp_obj = await response.json();
+
 		//console.log(resp_obj.message.length);
 		//console.log(resp_obj.message);
 		// slide_show(resp_obj.message);
+		// setInterval(display(resp_obj.message), time);
 		display(resp_obj.message);
 	} catch (e) {
 		console.log("You encountered a Bug at slide");
 	}
 }
+
 function display(value) {
-	// value.map((x, i) => {
-	let myvar = setInterval(toggle, 100);
-	// setInterval(function () {
-	function toggle() {
-		value.map((x, i) => {
-			// for (var i = 0; i < value.length; i++) {
-			console.log("");
-			console.log("The value of of index is " + i);
-			//console.log("The value link is " + x);
-			// document.getElementById("dog-image-container").innerHTML = `
-			// <img src=${x}>`;
-
-			setInterval(function () {
-				document.getElementById("dog-image-container").innerHTML = `
-			<img src=${x}>`;
-				stoptoggle();
-			}, 500);
-			// stoptoggle();
-		});
-		//stoptoggle();
-		// toggle();
-	}
-	// }, 1500);
-	function stoptoggle() {
-		clearInterval(myvar, 5000);
-	}
-	// });
-
-	// <img src="https://dog.ceo/api/breed/${value}/images">
+	data = value;
+	// setInterval(slide_data(value), time);
 }
-// $("#option-list").change(function () {
-// 	var id = $(this).val();
-// 	var text = $("option:selected", this).text(); //to get selected text
-// 	alert(text);
-// });
-// $(() => {
-// 	$("#option-list").change(function () {
-// 		var id = $(this).val();
-// 		var text = $("option:selected", this).text(); //to get selected text
-// 		alert(text);
-// 	});
-// });
 
+function slide_data() {
+	//document.slide.src = abc[i];
+	// setInterval(display_check(value), 2000);
+	document.getElementById("slide_image").src = data[i];
+	if (i < data.length - 1) {
+		i++;
+	} else {
+		i = 0;
+	}
+}
+setInterval(slide_data, time);
 $(document).on("change", "#option-list", function () {
 	var text = $("option:selected", this).text(); //to get selected text
 	// alert(`${text}`);
 	//console.log("The jquery value " + text);
 	slide_show(text);
 });
-
-// $(() => {
-// 	$("#option-list").on("change", function () {
-
-// 		var value = $(this).val();
-
-// 		var text = $("option:selected", this).text(); //to get selected text
-// 		// console.log(text);
-// 		alert("text");
-// 		/*	// console.log(v);
-// 		// var value = $(this).attr();
-// 		// console.log(v.target.value);
-// 		// console.log("JQ 2 work"); */
-// 	});
-// });
-//return `<option>${x}</option>`
-/*
-Object.keys(data_obj).map( x=>{
-	 console.log("Arrow Working");
-	 return <option> ${x}</option>
-	});sss
-*/
-/*
-for(const x in data_obj)
-{	
-	<option>${x}</option>
-}
-*/
-/*
-
-return (document.getElementById("demo").innerHTML = `
-<select>
-<option>Choose a Dog Breed</option>
-Object.keys(data_obj).map( x => <option> ${x}</option>);
-</select>
-`);
-*/
